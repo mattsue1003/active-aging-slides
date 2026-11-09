@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>活出青春 3.0：健康存六力 — 課程簡報</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<style>
+:root{--paper:#FBF7F1;--ink:#12343B;--ink2:#3F5C63;--mute:#7A8F94;--orange:#E8552D;--amber:#F4A93C;--teal:#028090;--line:#E6DDD2}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.5}
+header{background:var(--ink);color:#fff;padding:48px max(16px,env(safe-area-inset-left)) 40px max(16px,env(safe-area-inset-right))}
+header .in{max-width:960px;margin:0 auto}
+.tag{display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:700;letter-spacing:.12em;color:var(--amber)}
+.tag::before{content:"";width:28px;height:5px;background:var(--orange);border-radius:3px}
+h1{font-size:clamp(28px,5vw,44px);font-weight:900;margin:12px 0 8px;line-height:1.2;text-wrap:balance}
+header p{color:#CFE3E6;font-size:18px;margin:0;max-width:60ch}
+main{max-width:960px;margin:0 auto;padding:32px max(16px,env(safe-area-inset-left)) 64px max(16px,env(safe-area-inset-right));display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.card{background:#fff;border:2px solid var(--line);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.card .no{font-size:14px;font-weight:700;letter-spacing:.1em;color:var(--teal)}
+.card h2{margin:0;font-size:24px;font-weight:900;line-height:1.3}
+.card p{margin:0;color:var(--ink2);font-size:17px}
+.card .row{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:auto}
+.btn{display:inline-block;background:var(--orange);color:#fff;text-decoration:none;font-weight:900;font-size:19px;padding:14px 22px;border-radius:14px}
+.btn:hover{background:#c9451f}
+.qr{width:110px;height:110px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:6px}
+.qr img,.qr canvas{width:98px!important;height:98px!important}
+.hint{font-size:14px;color:var(--mute)}
+footer{text-align:center;color:var(--mute);font-size:14px;padding:0 16px 40px}
+.kbd{font-size:15px;color:var(--ink2);background:#F3EDE4;border-radius:10px;padding:10px 14px}
+</style>
+</head>
+<body>
+<header><div class="in">
+<span class="tag">愛迪樂健康促進 · 115 學年 北大</span>
+<h1>活出青春 3.0：健康存六力<br>課程網頁簡報</h1>
+<p>職能治療師帶領的中高齡健康促進課程。點選下方進入簡報；手機可直接觀看，電腦按 → 鍵或空白鍵翻頁，按 N 顯示講師提示，F 全螢幕。</p>
+</div></header>
+<main>
+<section class="card">
+ <div class="no">第 10 堂 · 2026-11-10</div>
+ <h2>數位時代的樂齡方案：職能治療師的科技與 AI 生活指南</h2>
+ <p>用「說的」跟 Gemini／Claude 聊天、建立自己的 Google 日曆、讓 Google 地圖帶路，加碼推薦六個適合中高齡的 AI 應用，並附研究佐證。</p>
+ <div class="row"><a class="btn" href="ai.html">開啟簡報</a><div class="qr" data-url="https://mattsue1003.github.io/active-aging-slides/ai.html"></div></div>
+</section>
+<section class="card">
+ <div class="no">第 11 堂 · 2026-11-10</div>
+ <h2>長照新視野：打造溫暖互助的鄰里生活網</h2>
+ <p>長照 3.0 跟 2.0 差在哪、怎麼申請；荷蘭失智村、日本會上錯菜的餐廳、新加坡垂直村落，以及台灣伯拉罕、不老騎士、互助喘息等案例與研究證據。</p>
+ <div class="row"><a class="btn" href="ltc.html">開啟簡報</a><div class="qr" data-url="https://mattsue1003.github.io/active-aging-slides/ltc.html"></div></div>
+</section>
+<section class="card" style="grid-column:1/-1">
+ <div class="no">操作提示</div>
+ <div class="kbd">電腦：→ / 空白鍵 下一步、← 上一步、N 講師提示、M 目錄、F 全螢幕。手機：左右滑動翻頁，或用下方按鈕。影片點縮圖會在 YouTube 開啟。</div>
+ <p class="hint">政策數字整理至 2026 年 11 月，實際資格與補助以衛福部公告（1966）為準。研究引用皆附 DOI。</p>
+</section>
+</main>
+<footer>© 愛迪樂健康促進 · 僅供課程教學使用</footer>
+<script>
+document.querySelectorAll('.qr').forEach(function(el){try{new QRCode(el,{text:el.dataset.url,width:98,height:98,correctLevel:QRCode.CorrectLevel.M})}catch(e){}});
+</script>
+</body>
+</html>
