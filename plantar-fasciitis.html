@@ -279,6 +279,17 @@ h2.title{font-size:clamp(36px,4.6vw,66px);margin-bottom:18px}
   #s6b .src,#s6c .src,#s9b .src,#s9c .src{margin-top:8px;font-size:.7rem}
   #s9c .verdict{font-size:.82rem;padding:4px 10px}
 }
+
+@media (max-height:800px){
+  #s4 .cards.c5 .card,#s6 .cards.c5 .card{padding:14px 14px 12px;gap:6px}
+  #s4 .cards.c5 .card p,#s6 .cards.c5 .card p{font-size:.78rem;line-height:1.42}
+  #s4 .cards.c5 .card h3,#s6 .cards.c5 .card h3{font-size:clamp(15px,1.15vw,19px)}
+  #s4 .cards.c5 .num,#s6 .cards.c5 .num{width:40px;height:40px;font-size:1.05rem}
+  #s4 .lead,#s6 .lead{font-size:.95rem}
+  #s4 .rule,#s6 .rule{margin:12px 0 8px!important}
+  #s4 .src,#s6 .src{margin-top:8px;font-size:.7rem}
+  #s4 .badge,#s6 .badge{font-size:.66rem;padding:2px 8px}
+}
 /* Side nav & controls */
 .dots{position:fixed;right:18px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:10px;z-index:40}
 .dots a{width:14px;height:14px;border-radius:50%;border:3px solid var(--black);background:#fff;display:block;transition:.2s}
@@ -362,7 +373,7 @@ h2.title{font-size:clamp(36px,4.6vw,66px);margin-bottom:18px}
     <h2 class="title rv">足底筋膜，是腳底的「弓弦」</h2>
     <p class="lead rv">一條厚厚的結締組織帶，從腳跟骨連到五根腳趾，像弓的弦一樣撐住足弓。每走一步，它都要承受並回彈體重。當負荷長期超過它的修復速度，腳跟附著處就會開始痛。</p>
     <div class="stats rv">
-      <div class="stat"><div class="big">約 10%</div><p>成年人一生中會遇到一次足底筋膜炎，是腳跟痛最常見的原因。</p></div>
+      <div class="stat"><div class="big">約 1 成</div><p>成年人一生中會遇到一次（各研究估計 4–10%），是腳跟痛最常見的原因。</p></div>
       <div class="stat"><div class="big">40–60 歲</div><p>最常發生的年齡層，久站工作者與跑者也是高風險族群。</p></div>
       <div class="stat"><div class="big">約 9 成</div><p>一年內靠非手術的保守治療就會明顯改善，但常需要 3–6 個月耐心。</p></div>
     </div>
@@ -373,7 +384,7 @@ h2.title{font-size:clamp(36px,4.6vw,66px);margin-bottom:18px}
         <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>按壓腳跟內側偏前方會有明顯壓痛點</li>
         <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>把腳趾往上扳、拉緊筋膜時會更痛（Windlass 測試）</li>
       </ul>
-      <p class="src rv" style="margin-top:0">診斷主要靠<b>病史與理學檢查</b>，一般不需先做影像。超音波常見筋膜增厚（超過 4 mm）與回音變低；X 光骨刺不是診斷必要條件。<br>資料來源：JOSPT 臨床指引 2023；J Med Ultrasound 2023 回顧；Foot Ankle Spec 2025 統合分析；J Foot Ankle Res 2022 影像統合分析。</p>
+      <p class="src rv" style="margin-top:0">診斷主要靠<b>病史與理學檢查</b>，一般不需先做影像。超音波常見筋膜增厚（常用切點 4 mm 以上）與回音變低；X 光骨刺不是診斷必要條件，痛的人骨刺較常見，但沒痛的人也可能有。<br>資料來源：JOSPT 臨床指引 2023；J Med Ultrasound 2023 回顧；Ther Umsch 2022 臨床指引（盛行率 4–10%）；Foot Ankle Orthop 2020 回顧（9 成 3–6 個月內改善）；J Foot Ankle Res 2022 影像統合分析。</p>
     </div>
   </div>
 </section>
@@ -384,11 +395,11 @@ h2.title{font-size:clamp(36px,4.6vw,66px);margin-bottom:18px}
     <div>
       <div class="kicker rv"><span class="n">2</span>成因 ①</div>
       <h2 class="title rv">不是「發炎」，<br>是筋膜<span class="yl">過勞退化</span></h2>
-      <p class="lead rv">近年的組織學與影像研究一致發現：慢性足底筋膜「炎」的筋膜裡，看到的是膠原纖維退化、微小撕裂與異常新生血管，典型的發炎細胞反而很少。所以學界逐漸改稱它為「足底筋膜病變」（plantar fasciopathy / fasciosis）。</p>
+      <p class="lead rv">慢性足底筋膜「炎」的組織切片裡，看到的主要是膠原纖維退化、微小撕裂與異常新生血管，典型的急性發炎細胞很少；不過近年的深層筋膜研究也發現低度發炎物質（細胞激素）與神經敏感化並存。所以更精確的說法是「以退化為主、可能伴隨低度發炎」，學界逐漸改稱它為「足底筋膜病變」（plantar fasciopathy / fasciosis）。</p>
       <div class="rule rv"></div>
       <ul class="checks rv">
         <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span><span><strong>機制：</strong>反覆拉扯 → 微小撕裂 → 修復趕不上 → 組織變厚、變硬、變脆弱</span></li>
-        <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span><span><strong>為什麼痛：</strong>病變的筋膜神經末梢密度增加、更敏感，稍微負荷就會痛</span></li>
+        <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span><span><strong>為什麼痛：</strong>深層筋膜病變的研究顯示神經末梢密度增加、更敏感，稍微負荷就會痛（此機制來自整體筋膜研究，非足底專一）</span></li>
         <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span><span><strong>意義：</strong>治療重點是「調整負荷＋讓組織重新適應」，不是只消炎止痛</span></li>
       </ul>
       <p class="src rv">資料來源：Clin Podiatr Med Surg 2021「Plantar Fasciitis/Fasciosis」；Clin Anat 2022 深層筋膜與慢性疼痛回顧；Br J Sports Med 2016 影像統合分析（51 篇研究）。</p>
@@ -436,8 +447,8 @@ h2.title{font-size:clamp(36px,4.6vw,66px);margin-bottom:18px}
       <div class="card">
         <div class="top"><div class="num">2</div><div class="ico"><svg viewBox="0 0 64 64"><path d="M14 50h36"/><path d="M22 50V22l10-10 10 10v28"/><path d="M26 36h12"/></svg></div></div>
         <h3>踝關節背屈不足<br>小腿太緊</h3>
-        <p>腳踝往上勾的角度變小，走路時筋膜被迫代償拉扯。指引列為主要風險因子。</p>
-        <div><span class="badge y">★★ 中</span></div>
+        <p>腳踝往上勾的角度變小，走路時筋膜被迫代償拉扯。指引列為風險因子；但 2016 年統合分析指出踝關節活動度的證據並不一致，小腿緊繃與疼痛程度的關聯來自小型病例系列。</p>
+        <div><span class="badge y">★★ 中（指引）</span></div>
       </div>
       <div class="card">
         <div class="top"><div class="num">3</div><div class="ico"><svg viewBox="0 0 64 64"><path d="M8 54h48"/><path d="M14 54V28h14v26M36 54V18h14v36"/></svg></div></div>
@@ -448,18 +459,18 @@ h2.title{font-size:clamp(36px,4.6vw,66px);margin-bottom:18px}
       <div class="card">
         <div class="top"><div class="num">4</div><div class="ico"><svg viewBox="0 0 64 64"><path d="M10 50L26 26l10 12 8-8 10 20"/><path d="M8 54h48"/><circle cx="44" cy="16" r="5"/></svg></div></div>
         <h3>運動量<br>突然增加</h3>
-        <p>跑者與活動量大者，若里程、強度或換鞋變化太快，微小撕裂來不及修復。</p>
-        <div><span class="badge y">★★ 中</span></div>
+        <p>跑步被指引列為風險因子；「里程、強度變化太快」則是臨床共識，尚無統合分析直接驗證。運動族群統合分析找到的是 BMI、體重偏高與踝蹠屈角度偏大。</p>
+        <div><span class="badge y">★ 共識</span></div>
       </div>
       <div class="card">
         <div class="top"><div class="num">5</div><div class="ico"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="22"/><path d="M32 18v14l9 6"/></svg></div></div>
         <h3>年齡 40–60<br>體重近期上升</h3>
-        <p>組織彈性隨年齡下降、腳跟脂肪墊變薄；體重短期增加會放大每一步的負荷。</p>
+        <p>組織修復能力隨年齡下降；體重短期增加會放大每一步的負荷。（影像統合分析反而顯示痛者的腳跟脂肪墊較厚，「脂肪墊變薄」不是成因。）</p>
         <div><span class="badge y">★ 中弱</span></div>
       </div>
     </div>
     <div class="rule rv" style="margin:28px 0 16px"></div>
-    <p class="lead rv" style="font-size:1.05rem"><strong>常被誤會的因子：</strong>扁平足、高足弓、足部力學結構。統合分析發現這類「結構論」證據不一致，並不是主要原因；體重與柔軟度才是可以改變的關鍵。</p>
+    <p class="lead rv" style="font-size:1.05rem"><strong>常被誤會的因子：</strong>扁平足、高足弓、足部力學結構。統合分析發現這類「結構論」證據不一致，並不是主要原因；體重與負荷是最能改變的關鍵，柔軟度次之。</p>
     <p class="src rv">資料來源：van Leeuwen 等，Br J Sports Med 2016（51 篇研究統合分析，BMI&gt;27 OR 3.7）；Sports Health 2021 運動族群風險因子統合分析；JOSPT 臨床指引 2023 風險因子章節。</p>
   </div>
 </section>
@@ -473,8 +484,8 @@ h2.title{font-size:clamp(36px,4.6vw,66px);margin-bottom:18px}
     <div class="cards c5 rv" style="margin-top:28px">
       <div class="card">
         <div class="top"><div class="num">1</div><h3>把體重<br>管回來</h3></div>
-        <p>BMI 每降 1，每一步腳跟承受的衝擊都跟著降。指引建議以運動與飲食維持理想體重，必要時轉介營養師。</p>
-        <div><span class="badge y">證據最強</span></div>
+        <p>體重是唯一證據一致的可改變風險因子。但「減重能預防或治好」的直接試驗很少，指引把減重衛教列為 E 級（理論推論），建議以運動與飲食維持理想體重，必要時轉介營養師。</p>
+        <div><span class="badge y">風險證據最強・介入證據 E 級</span></div>
       </div>
       <div class="card">
         <div class="top"><div class="num">2</div><h3>每天拉小腿<br>與足底</h3></div>
@@ -488,7 +499,7 @@ h2.title{font-size:clamp(36px,4.6vw,66px);margin-bottom:18px}
       </div>
       <div class="card">
         <div class="top"><div class="num">4</div><h3>負荷<br>循序漸進</h3></div>
-        <p>新增走路量、爬山、跑步或久站工作時，每週增加不超過一成；硬地久站者安排坐下休息與軟墊。</p>
+        <p>新增走路量、爬山、跑步或久站工作時循序漸進（「每週不超過一成」是常見經驗法則，缺乏直接證據）；硬地久站者安排坐下休息與軟墊。</p>
         <div><span class="badge">風險因子推論</span></div>
       </div>
       <div class="card">
@@ -515,8 +526,8 @@ h2.title{font-size:clamp(36px,4.6vw,66px);margin-bottom:18px}
       </div>
       <div class="card">
         <div class="top"><div class="num">2</div><h3>高負荷<br>肌力訓練</h3></div>
-        <p>腳趾墊毛巾的慢速提踵，隔天一次。隨機試驗顯示 3 個月時功能分數比單純伸展組好 29 分，長期兩者相當。</p>
-        <div><span class="badge y">RCT 證據</span></div>
+        <p>腳趾墊毛巾的慢速提踵，隔天一次。48 人隨機試驗顯示 3 個月時功能分數比單純伸展組好 29 分，長期兩者相當；2023 年 180 人試驗中加上訓練則未顯著優於衛教＋鞋跟墊。</p>
+        <div><span class="badge y">小型 RCT・結果不一</span></div>
       </div>
       <div class="card">
         <div class="top"><div class="num">3</div><h3>貼紮<br>＋鞋墊</h3></div>
@@ -530,12 +541,12 @@ h2.title{font-size:clamp(36px,4.6vw,66px);margin-bottom:18px}
       </div>
       <div class="card">
         <div class="top"><div class="num">5</div><h3>體外震波<br>ESWT</h3></div>
-        <p>保守治療 3–6 個月沒改善再考慮。63 篇 RCT 的網絡統合分析顯示各時間點都有效；3 與 6 個月的效果優於類固醇注射。</p>
+        <p>保守治療 3–6 個月沒改善再考慮。63 篇 RCT 的網絡統合分析顯示各時間點都有效；3 與 6 個月的效果優於類固醇注射。物理治療指引本身未評比震波。</p>
         <div><span class="badge y">統合分析</span></div>
       </div>
     </div>
     <div class="rule rv" style="margin:26px 0 14px"></div>
-    <p class="lead rv" style="font-size:1.05rem"><strong>指引明確「不建議」：</strong>用治療性超音波來加強伸展效果（A 級反對）；電療不應取代徒手、伸展與鞋墊（D 級）。低能量雷射可短期輔助減痛（B 級）。</p>
+    <p class="lead rv" style="font-size:1.05rem"><strong>指引明確「不建議」：</strong>用治療性超音波來加強伸展效果（A 級反對）；電療不應取代徒手、伸展與鞋墊（D 級，離子導入與干擾波可當第二線）。低能量雷射可短期輔助減痛（B 級）；乾針處理小腿與足底激痛點為 B 級建議。本頁排序是整理者的綜合判斷，不是指引的官方排名。</p>
     <p class="src rv">資料來源：Koc 等，JOSPT 2023 臨床指引修訂版；Rathleff 等，Scand J Med Sci Sports 2015 RCT；Sci Rep 2026 網絡統合分析（63 RCT, 4170 人）；Clin Rehabil 2024 震波 vs 類固醇統合分析。</p>
   </div>
 </section>
@@ -558,11 +569,11 @@ h2.title{font-size:clamp(36px,4.6vw,66px);margin-bottom:18px}
           </div>
           <div class="card">
             <h3>② 小腿伸展兩式</h3>
-            <p><strong>膝蓋打直</strong>拉腓腸肌、<strong>膝蓋微彎</strong>拉比目魚肌，各 <strong>30 秒 × 3 下</strong>，早晚各一回。小腿越緊，腳跟越痛：研究發現腓腸肌緊繃程度與晨間第一步痛高度相關（r≈0.76）。</p>
+            <p><strong>膝蓋打直</strong>拉腓腸肌、<strong>膝蓋微彎</strong>拉比目魚肌，各 <strong>30 秒 × 3 下</strong>，早晚各一回。小腿越緊，腳跟越痛：33 人的病例系列發現腓腸肌緊繃程度與晨間第一步痛高度相關（r≈0.76），伸開後疼痛也跟著降。</p>
           </div>
           <div class="card">
             <h3>③ 徒手治療（由治療師執行）</h3>
-            <p>踝關節與距下關節鬆動、小腿與足底軟組織放鬆、肌筋膜放鬆。2026 年系統性回顧：軟組織徒手治療加上一般治療，疼痛與功能改善優於一般治療。指引 A 級。</p>
+            <p>踝關節與距下關節鬆動、小腿與足底軟組織放鬆、肌筋膜放鬆。2026 年系統性回顧：軟組織徒手治療加上一般治療，疼痛與功能改善優於一般治療，但各研究做法差異大。指引 A 級。</p>
           </div>
         </div>
       </div>
@@ -575,7 +586,7 @@ h2.title{font-size:clamp(36px,4.6vw,66px);margin-bottom:18px}
           <tr><td>第 3–4 週</td><td>10RM</td><td>4 組 × 10 下</td></tr>
           <tr><td>第 5 週起</td><td>8RM，背包放書加重</td><td>5 組 × 8 下</td></tr>
         </table>
-        <p class="how"><b>為什麼有效？</b>慢速高負荷讓筋膜與小腿肌腱「重新適應負荷」，3 個月時功能分數比單純伸展組好 29 分；2023 年 180 人試驗也採用同樣的自我調整提踵方案。<b>做不到單腳就先雙腳</b>，隔天早上不能比平常更痛。</p>
+        <p class="how"><b>證據怎麼讀？</b>原始試驗只有 48 人，3 個月時功能分數比單純伸展組好 29 分，6–12 個月兩組相當。2023 年 180 人的 FIX-Heel 試驗用同樣的提踵方案，但「衛教＋鞋跟墊」再加上訓練，12 週與 1 年的差距<b>未達統計顯著</b>：提醒我們減負荷與衛教是基礎，訓練是加分而不是魔法。<b>做不到單腳就先雙腳</b>，隔天早上不能比平常更痛。</p>
       </div>
     </div>
     <p class="src rv">資料來源：JOSPT 2023 指引（伸展 A、徒手 A）；Rathleff 等 Scand J Med Sci Sports 2015；Riel 等 Br J Sports Med 2023；Pearce 等 Foot Ankle Int 2020；J Man Manip Ther 2026 軟組織徒手治療系統性回顧。</p>
@@ -628,17 +639,17 @@ h2.title{font-size:clamp(36px,4.6vw,66px);margin-bottom:18px}
       <div class="tstep"><div class="dot">0–6<small style="font-size:.6em">週</small></div><h3>自我照護</h3><p>伸展、肌力訓練、換鞋、貼紮、減少負荷。大多數人在這階段就開始好轉。</p></div>
       <div class="tstep"><div class="dot">6–12<small style="font-size:.6em">週</small></div><h3>物理治療</h3><p>徒手治療、夜間副木、低能量雷射、乾針，搭配居家運動。</p></div>
       <div class="tstep"><div class="dot">3–6<small style="font-size:.6em">月</small></div><h3>震波或注射</h3><p>震波優先。注射以 PRP、增生療法為主，類固醇限短期救急。</p></div>
-      <div class="tstep"><div class="dot">6–12<small style="font-size:.6em">月</small></div><h3>手術評估</h3><p>不到 5% 的人需要。腓腸肌放鬆術或內視鏡筋膜部分切開。</p></div>
+      <div class="tstep"><div class="dot">6–12<small style="font-size:.6em">月</small></div><h3>手術評估</h3><p>只有少數人需要（文獻多估計約 5% 以下）。腓腸肌放鬆術或內視鏡筋膜部分切開。</p></div>
     </div>
     <div class="cards c3 rv" style="margin-top:34px">
       <div class="card">
         <h3>類固醇注射</h3>
-        <p><strong>短期快，長期沒優勢。</strong>2023 年 180 人隨機試驗：加上類固醇注射，12 週後與單純運動組的差距未達臨床意義。可能造成筋膜斷裂與脂肪墊萎縮，建議超音波導引、不重複多次。</p>
+        <p><strong>短期快，長期沒優勢。</strong>1–3 個月內確實比安慰劑有效，所以有「救急」角色；但 2023 年 180 人試驗中，加上注射與單純運動組的差距未達臨床意義。可能造成筋膜斷裂與脂肪墊萎縮，建議超音波導引、不重複多次。</p>
         <div><span class="badge r">謹慎</span></div>
       </div>
       <div class="card">
         <h3>PRP／增生療法</h3>
-        <p><strong>中長期較佳，價格較高。</strong>多篇統合分析顯示 6–12 個月時 PRP 的疼痛與功能優於類固醇；葡萄糖增生療法短期不如類固醇，長期疼痛改善較持久。證據品質中等。</p>
+        <p><strong>中長期較佳，價格較高。</strong>多篇統合分析顯示 6–12 個月時 PRP 的疼痛與功能優於類固醇；葡萄糖增生療法短期不如類固醇，長期疼痛改善較持久。63 篇 RCT 的網絡統合分析另指出肉毒桿菌素注射短期止痛最強（台灣少用）。證據品質中等、PRP 製備方法不一。</p>
         <div><span class="badge y">可考慮</span></div>
       </div>
       <div class="card">
@@ -661,19 +672,19 @@ h2.title{font-size:clamp(36px,4.6vw,66px);margin-bottom:18px}
       <button class="myth" type="button">
         <span class="tag">迷思 1</span>
         <h3><span class="q">「X 光照到骨刺，痛就是骨刺刺到肉！」</span><span class="a">骨刺是「結果」不是「原因」</span></h3>
-        <p class="truth">很多沒有腳跟痛的人也有骨刺；骨刺是筋膜長期拉扯後骨頭的反應。痛的來源是筋膜附著處，所以治療不需要「把骨刺拿掉」，也不必因為骨刺而恐慌。</p>
+        <p class="truth">沒有腳跟痛的人也常有骨刺；影像統合分析顯示痛的人骨刺較常見，但那是長期負荷下骨頭的反應（成因仍有牽拉說、垂直壓力說等爭議），不是骨刺「刺到肉」。痛的來源在筋膜附著處與周邊組織，治療與手術都不以「拿掉骨刺」為目標。</p>
         <span class="flip-hint">點我翻開 →</span>
       </button>
       <button class="myth" type="button">
         <span class="tag">迷思 2</span>
         <h3><span class="q">「這是發炎，消炎藥吃一吃、類固醇打一針就好。」</span><span class="a">多數是退化型過勞，不是急性發炎</span></h3>
-        <p class="truth">組織學看不到典型發炎細胞。類固醇只能短期止痛，3 個月後與單純運動組沒有臨床差異，且有筋膜斷裂、脂肪墊萎縮風險。止痛是輔助，重點在調整負荷與訓練。</p>
+        <p class="truth">慢性期組織學以退化為主，典型發炎細胞很少（可能有低度發炎）。消炎藥與類固醇能短期止痛，但 3 個月後與單純運動組沒有臨床差異，且類固醇有筋膜斷裂、脂肪墊萎縮風險。止痛是輔助，重點在調整負荷與訓練。</p>
         <span class="flip-hint">點我翻開 →</span>
       </button>
       <button class="myth" type="button">
         <span class="tag">迷思 3</span>
         <h3><span class="q">「會痛就是要完全休息，什麼都別做。」</span><span class="a">要的是「調整負荷」，不是「零負荷」</span></h3>
-        <p class="truth">完全不動會讓小腿與筋膜更緊、更弱。研究支持每隔一天做高負荷慢速提踵，3 個月功能改善最快。原則：運動中輕微痠痛可接受，隔天早上不能更痛。</p>
+        <p class="truth">完全不動會讓小腿與筋膜更緊、更弱。小型試驗支持每隔一天做高負荷慢速提踵，3 個月功能改善較快；指引也建議足踝阻力訓練。原則：運動中輕微痠痛可接受，隔天早上不能更痛。</p>
         <span class="flip-hint">點我翻開 →</span>
       </button>
       <button class="myth" type="button">
@@ -750,7 +761,7 @@ h2.title{font-size:clamp(36px,4.6vw,66px);margin-bottom:18px}
           <li><span><strong>足底橫帶③：</strong>從腳跟前方開始，一條一條「由外側往內側」橫貼到前腳掌，每條重疊一半，貼時手把足弓往上托，貼到錨帶為止。</span></li>
           <li><span><strong>收尾：</strong>再用一條錨帶蓋住所有橫帶的前端，腳外側邊緣也可補一條。站起來走兩步，緊繃舒服、不麻不白即可。</span></li>
         </ol>
-        <p class="how" style="margin-top:14px"><b>彈性貼布（肌內效）版：</b>兩條即可。第一條 I 型從腳跟底貼到腳趾根部（中段拉 30–50%），第二條橫向繞過足弓最高處包覆（拉 50%），兩端不拉。研究顯示兩種貼法效果相近，可依皮膚與習慣選擇。<br><b>注意：</b>貼 1–2 天或洗澡後就換；癢、紅、起疹立刻撕掉；糖尿病、皮膚脆弱、循環不良者先問治療師。貼紮只是短期輔助，伸展與訓練不能停。</p>
+        <p class="how" style="margin-top:14px"><b>彈性貼布（肌內效）版：</b>兩條即可。第一條 I 型從腳跟底貼到腳趾根部（中段拉 30–50%），第二條橫向繞過足弓最高處包覆（拉 50%），兩端不拉。隨機試驗顯示兩種貼法效果相近；但另一試驗發現肌內效貼布加在震波治療上沒有額外好處，貼紮請當輔助。<br><b>注意：</b>貼 1–2 天或洗澡後就換；癢、紅、起疹立刻撕掉；糖尿病、皮膚脆弱、循環不良者先問治療師。貼紮只是短期輔助，伸展與訓練不能停。</p>
       </div>
       <div class="card"><svg class="tapesvg" viewBox="0 0 320 460" fill="none" stroke="#111" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
   <!-- foot sole outline -->
@@ -894,6 +905,8 @@ h2.title{font-size:clamp(36px,4.6vw,66px);margin-bottom:18px}
       <li>Schuitema D 等. Effectiveness of mechanical treatment for plantar fasciitis: systematic review（鞋墊、貼紮、夜間副木）. <i>J Sport Rehabil</i> 2019. <a href="https://doi.org/10.1123/jsr.2019-0036" target="_blank" rel="noopener">DOI</a></li>
       <li>Pearce CJ 等. Correlation between gastrocnemius tightness and heel pain severity in plantar fasciitis. <i>Foot Ankle Int</i> 2020. <a href="https://doi.org/10.1177/1071100720955144" target="_blank" rel="noopener">DOI</a></li>
       <li>Comparative efficacy of different intensity levels of ESWT in plantar heel pain: network meta-analysis. <i>PM&amp;R</i> 2025. <a href="https://doi.org/10.1002/pmrj.13417" target="_blank" rel="noopener">DOI</a></li>
+      <li>Evaluation and treatment of chronic plantar fasciitis（專家回顧：9 成 3–6 個月改善、類固醇風險）. <i>Foot Ankle Orthop</i> 2020. <a href="https://doi.org/10.1177/2473011419896763" target="_blank" rel="noopener">DOI</a></li>
+      <li>Hirschmüller A 等. Plantar Fasciopathy – pathophysiology, diagnostics and therapy: a clinical guideline（盛行率 4–10%）. <i>Ther Umsch</i> 2022. <a href="https://doi.org/10.1024/0040-5930/a001369" target="_blank" rel="noopener">DOI</a></li>
     </ol>
     <div class="pills rv" style="margin-top:22px"><a class="pill sm" href="#s1">回到封面 ↑</a></div>
   </div>
