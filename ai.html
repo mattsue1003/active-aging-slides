@@ -68,6 +68,7 @@ table.cmp th:first-child{border-radius:14px 0 0 0}table.cmp th:last-child{border
 table.cmp td{padding:12px 16px;border-bottom:2px solid var(--line);background:#fff;vertical-align:top}
 table.cmp td:first-child{font-weight:900;color:var(--teal);width:190px}
 table.cmp td:last-child{background:var(--pale-o);font-weight:700}
+table.cmp.wide1{font-size:23px}table.cmp.wide1 td:first-child{width:auto;color:var(--ink)}table.cmp.wide1 td:nth-child(2){width:220px;white-space:nowrap;color:var(--teal);font-weight:900}table.cmp.wide1 td:last-child{width:330px;background:#fff;font-weight:400}table.cmp.wide1 th:last-child{background:var(--ink)}
 /* 時間軸 */
 .tl{display:flex;align-items:flex-start;gap:0;position:relative;padding-top:26px}
 .tl::before{content:"";position:absolute;left:5%;right:5%;top:48px;height:8px;background:var(--line);border-radius:4px}
@@ -792,6 +793,21 @@ body.mobile .slide.cover{padding-bottom:44px}
 <div class="note">現場示範：拿一個英文包裝給 Lens 翻譯；打開即時轉錄讓學員講話看字幕跑出來，通常會引起驚呼。</div>
 </section>
 <section class="slide">
+<span class="tag">加碼 · 用手機領政府的「健康幣」</span>
+<h2>兩個 App 綁好，做健檢、打疫苗就自動存幣<small>衛福部 2026/10/1 開跑，1 幣抵 1 元，滿 1,000 幣可到超商、藥局、部立醫院折抵</small></h2>
+<div class="fill">
+<div class="list">
+ <div class="li"><span class="num">1</span><span>下載「<b>健保快易通｜健康存摺</b>」，用本人門號驗證身分（關 Wi-Fi）</span></div>
+ <div class="li st" data-at="1"><span class="num">2</span><span>下載「<b>Health GO</b>」綁定一次。首次登入送 200 幣、填量表再送 100 幣</span></div>
+ <div class="li st" data-at="2"><span class="num">3</span><span>65 歲以上每年<b>免費成人健檢 800 幣</b>；流感 450、肺炎鏈球菌 600、新冠 900；大腸癌篩檢 900，自動入帳</span></div>
+ <div class="li st" data-at="3"><span class="num">4</span><span>滿 1,000 幣，出示 QR Code 到超商、藥局、部立醫院折抵。<b>11/30 前綁定</b>還能抽獎</span></div>
+</div>
+<div class="callout t st" data-at="4">沒有本人門號：用「裝置碼認證」或到 26 家部立醫院用健保卡兌換。運動部的「運動幣」（每年 500 元，1 月抽籤）是另一套，不能互換。</div>
+</div>
+<p class="src">資料：健康幣官網 healthtoken.hpa.gov.tw；商業周刊 2026-10-01；動滋網 500.gov.tw。細節以衛福部、運動部公告為準。</p>
+<div class="note">最適合現場實作：請有本人門號的學員當場裝健保快易通。驗證常卡在「門號不是本人」，先問清楚。下一堂長照課會詳細講健康幣能換什麼。</div>
+</section>
+<section class="slide">
 <span class="tag">用得安心的三個原則</span>
 <h2>AI 是助理，不是老闆<small>它很會講，但不一定對；最後做決定的是你</small></h2>
 <div class="fill">
@@ -861,6 +877,7 @@ body.mobile .slide.cover{padding-bottom:44px}
   function isMobile(){ return window.innerWidth<760 || (window.innerWidth<1000 && window.innerHeight>window.innerWidth); }
   function fit(){
     var w=window.innerWidth, h=window.innerHeight;
+    var act=document.querySelector('.slide.active'); if(act && !isMobile()) setTimeout(function(){fitSlide(act)},0);
     if(isMobile()){
       document.body.classList.add('mobile');
       var s=w/640; stageEl.style.transform='scale('+s+')';
@@ -877,8 +894,18 @@ body.mobile .slide.cover{padding-bottom:44px}
     sl.querySelectorAll('.st').forEach(function(e){e.classList.toggle('on',+e.dataset.at<=stage)});
     sl.querySelectorAll('.only').forEach(function(e){e.classList.toggle('on',+e.dataset.at===stage)});
     sl.querySelectorAll('.badge[data-at],.tap[data-at]').forEach(function(e){e.style.display=(+e.dataset.at===stage)?'':'none'});
-    if(document.body.classList.contains('mobile')) fit();
+    if(document.body.classList.contains('mobile')) fit(); else fitSlide(sl);
   }
+  function fitSlide(sl){
+    var f=sl.querySelector('.fill'); if(!f) return;
+    f.style.zoom='';
+    if(document.body.classList.contains('mobile')) return;
+    var jc=f.style.justifyContent; f.style.justifyContent='flex-start';
+    var avail=f.clientHeight, need=f.scrollHeight;
+    f.style.justifyContent=jc;
+    if(need>avail+2){ f.style.zoom=Math.max(.55, (avail/need)*0.985).toFixed(3); }
+  }
+  window.__fitSlide=fitSlide;
   function show(n,full){
     i=Math.max(0,Math.min(slides.length-1,n));
     slides.forEach(function(s,k){s.classList.toggle('active',k===i)});
@@ -933,6 +960,7 @@ body.mobile .slide.cover{padding-bottom:44px}
   },{passive:true});
   window.addEventListener('resize',fit); window.addEventListener('orientationchange',function(){setTimeout(fit,200)}); fit();
   var m=(location.hash||'').match(/p(\d+)/); show(m?+m[1]-1:0);
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(function(){var a=document.querySelector('.slide.active'); if(a) fitSlide(a);});
   window.addEventListener('hashchange',function(){ var mm=(location.hash||'').match(/p(\d+)/); if(mm && (+mm[1]-1)!==i) show(+mm[1]-1); });
 })();
 </script>

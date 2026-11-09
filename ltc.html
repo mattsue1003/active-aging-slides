@@ -68,6 +68,7 @@ table.cmp th:first-child{border-radius:14px 0 0 0}table.cmp th:last-child{border
 table.cmp td{padding:12px 16px;border-bottom:2px solid var(--line);background:#fff;vertical-align:top}
 table.cmp td:first-child{font-weight:900;color:var(--teal);width:190px}
 table.cmp td:last-child{background:var(--pale-o);font-weight:700}
+table.cmp.wide1{font-size:23px}table.cmp.wide1 td:first-child{width:auto;color:var(--ink)}table.cmp.wide1 td:nth-child(2){width:220px;white-space:nowrap;color:var(--teal);font-weight:900}table.cmp.wide1 td:last-child{width:330px;background:#fff;font-weight:400}table.cmp.wide1 th:last-child{background:var(--ink)}
 /* 時間軸 */
 .tl{display:flex;align-items:flex-start;gap:0;position:relative;padding-top:26px}
 .tl::before{content:"";position:absolute;left:5%;right:5%;top:48px;height:8px;background:var(--line);border-radius:4px}
@@ -378,12 +379,12 @@ body.mobile .slide.cover{padding-bottom:44px}
 <div class="fill">
 <table class="cmp">
 <tr><th>項目</th><th>長照 2.0（2017～2025）</th><th>長照 3.0（2026 起）</th></tr>
-<tr><td>誰可以用</td><td>65 歲以上失能、55 歲以上失能原住民、50 歲以上失智、身心障礙者</td><td>新增 <b>全年齡</b>「失智且失能」者、急性後期照護（PAC）對象，不再用年齡卡人</td></tr>
+<tr><td>誰可以用</td><td>65 歲以上失能、55 歲以上失能原住民、50 歲以上失智、身心障礙者</td><td>新增<b>全年齡</b>失智且失能者、急性後期照護（PAC）對象</td></tr>
 <tr><td>出院銜接</td><td>平均 4 天接上長照（2017 年要 51 天）</td><td>目標 <b>1～2 天</b>，醫院、長照、居家醫療一條龍</td></tr>
-<tr><td>住宿機構補助</td><td>每人每年最高 12 萬，有排富</td><td>每月加碼 5 千～1.5 萬，每年最高 <b>18 萬</b>，取消排富，溯及 2026/1/1</td></tr>
-<tr><td>家有外籍看護</td><td>多數服務不能同時申請</td><td>仍可申請<b>喘息、日照、家庭托顧</b>等服務</td></tr>
-<tr><td>輔具</td><td>每 3 年 4 萬，以購買為主</td><td>新增智慧科技輔具<b>全租賃</b>，每 3 年 6 萬（與舊制二擇一）</td></tr>
-<tr><td>照顧者喘息</td><td>喘息服務在家或機構</td><td>可陪同外出；試辦「<b>互助喘息</b>」值 1 天換休 2 天</td></tr>
+<tr><td>住宿機構補助</td><td>每年最高 12 萬，有排富</td><td>每年最高 <b>18 萬</b>，取消排富，溯及 2026/1/1</td></tr>
+<tr><td>家有外籍看護</td><td>多數服務不能同時申請</td><td>可申請<b>喘息、日照、家庭托顧</b></td></tr>
+<tr><td>輔具</td><td>每 3 年 4 萬，以購買為主</td><td>智慧輔具<b>全租賃</b> 每 3 年 6 萬（二擇一）</td></tr>
+<tr><td>照顧者喘息</td><td>在家或機構喘息</td><td>可陪同外出；試辦「<b>互助喘息</b>」值 1 換 2</td></tr>
 </table>
 </div>
 <p class="src">資料：衛福部長照專區、元氣網、早安健康、TVBS 健康（2025–2026）。金額與資格以衛福部公告、1966 查詢為準。</p>
@@ -603,6 +604,64 @@ body.mobile .slide.cover{padding-bottom:44px}
 <div class="note">請學員拿出手機掃 QR（下一堂 AI 課會教地圖）。這頁可加上「三峽區、北大特區附近實際據點名稱」，課前請先查好。</div>
 </section>
 <section class="slide">
+<span class="tag">查證過了，是真的 · 衛福部「健康幣」</span>
+<h2>做健檢、打疫苗就送「健康幣」，1 幣抵 1 元<small>2026/10/1 起累積、12/1 起兌換；18 歲以上有健保卡就能參加</small></h2>
+<div class="fill">
+<table class="cmp wide1">
+<tr><th>65 歲以上最容易拿到的項目</th><th>幣值</th><th>多久一次</th></tr>
+<tr><td>首次登入健康幣專區 ＋ 填生活型態量表</td><td>200 ＋ 100</td><td>一次</td></tr>
+<tr><td>免費成人健檢</td><td>800</td><td>65 歲以上每年 1 次</td></tr>
+<tr><td>流感／肺炎鏈球菌／新冠疫苗</td><td>450／600／900</td><td>同日流感＋新冠 1,350</td></tr>
+<tr><td>大腸癌篩檢（糞便潛血）</td><td>900</td><td>45～74 歲每 2 年</td></tr>
+<tr><td>乳癌、口腔癌、肺癌、子宮頸癌篩檢</td><td>900～1,000</td><td>依年齡與風險資格</td></tr>
+</table>
+<div class="callout st" data-at="1">國健署估算 65 歲以上兩年約可累積 <b>8,350～13,150 幣</b>；滿 <b>1,000 幣</b>可換，2 年內有效。第一階段<b>沒有運動、量血壓項目</b>。</div>
+</div>
+<p class="src">資料：健康幣官網 healthtoken.hpa.gov.tw、商業周刊 2026-10-01。課堂的「健康幣」是老師自訂獎勵，與政府不同。</p>
+<div class="note">先問：「有人聽過健康幣嗎？」澄清三種幣：健康幣（衛福部，做健檢疫苗）、運動幣（運動部，500 元抽籤）、我們課堂的健康幣。重點在表格第二、三列：65 歲以上每年成人健檢＋打疫苗，就是最穩的幣。</div>
+</section>
+<section class="slide">
+<span class="tag">帶長輩領健康幣 · 四步驟</span>
+<h2>先綁定 → 做健康任務 → 自動入帳 → 滿千就能換</h2>
+<div class="fill">
+<div class="list">
+ <div class="li"><span class="num">1</span><span><b>健保快易通 App 身分驗證</b>：用本人名下門號（關 Wi-Fi、用 4G/5G）。沒有自己門號：用「裝置碼認證」，需電腦＋健保卡＋讀卡機</span></div>
+ <div class="li st" data-at="1"><span class="num">2</span><span><b>綁定 Health GO App</b>（國健署）：兩個 App 互跳一次就好；一支門號只能綁一位本人</span></div>
+ <div class="li st" data-at="2"><span class="num">3</span><span><b>去做公費的事</b>：成人健檢、癌症篩檢、公費疫苗。疫苗約 2 天入帳、健檢最晚 3 個月。<b>自費不算</b>，10/1 前做的不補發</span></div>
+ <div class="li st" data-at="3"><span class="num">4</span><span><b>滿 1,000 幣</b>：Health GO 出示 QR Code 到 7-ELEVEN、全家、全聯、大樹／維康藥局、部立醫院、World Gym／健身工廠／Curves 折抵</span></div>
+</div>
+</div>
+<p class="src">查幣：健康存摺 → 重要資訊 → 健康幣專區。資料：健康幣官網、商業周刊 2026-10-01。</p>
+<div class="note">步驟 1 的門號最常卡關：很多長輩用子女名下門號，要走裝置碼認證或請子女陪同。可以當場請有本人門號的學員下載健保快易通。</div>
+</section>
+<section class="slide">
+<span class="tag">健康幣 · 三件要知道的事</span>
+<h2>沒有智慧型手機也能拿，家人能幫看、不能代換</h2>
+<div class="fill">
+<div class="cols c3">
+ <div class="card t big"><div class="k">沒有智慧型手機</div><div class="v">一樣會累積。到衛福部 <b>26 家部立醫院</b>用健保卡直接兌換健康服務（自費健檢、疫苗折抵）。</div></div>
+ <div class="card a big st" data-at="1"><div class="k">家人可以幫忙</div><div class="v">經本人同意，子女用「<b>眷屬管理</b>」幫忙看累積多少；但健康幣<b>只能本人兌換</b>，不能轉讓、不能找零。</div></div>
+ <div class="card o big st" data-at="2"><div class="k">11/30 前綁定有抽獎</div><div class="v">10/1～11/30 完成兩個 App 綁定，自動參加週週抽 <b>200 元數位券</b>（每週 3,600 名）；12/7 再抽 <b>200 支 Apple Watch</b>。這週就幫爸媽綁好。</div></div>
+</div>
+</div>
+<p class="src">資料：商業周刊 2026-10-01；兌換商品清單與各通路折抵上限以衛福部 12/1 前公告為準。</p>
+<div class="note">第三張最有動力：今天回家就綁。順便提醒：任何要你「先匯錢、給驗證碼」才能領幣的訊息都是詐騙，健康幣不需要付錢。</div>
+</section>
+<section class="slide">
+<span class="tag">另一個是真的 · 運動部「運動幣」</span>
+<h2>每年 500 元「運動幣」：抽籤制，用來上課、進場館<small>2026 年起常態發放，每年限量 60 萬份；跟健康幣是兩套制度，不能互換</small></h2>
+<div class="fill">
+<div class="cols c3">
+ <div class="card"><div class="k">誰能抽</div><div class="v">年滿 16 歲、設有戶籍的國民都能登記，<b>長輩當然可以</b>。2026 年在「動滋網 500.gov.tw」登記（1/26～2/8），2/12 抽籤，3/1 起領用。</div></div>
+ <div class="card st" data-at="1"><div class="k">能用在哪</div><div class="v"><b>做運動</b>（運動課程、社團費、入場費、會員費、場地、教練指導）最高抵 500 元；<b>看比賽</b>最高 500 元；<b>買裝備</b>最高 200 元。用到 12/31，沒用完收回。</div></div>
+ <div class="card st" data-at="2"><div class="k">怎麼用</div><div class="v">到合作店家出示 App 的 <b>QR Code／付款碼</b>，再告知簡訊驗證碼。據點的收費運動課、游泳池、國民運動中心多半可用，去之前先問「收不收運動幣」。</div></div>
+</div>
+<div class="callout o st" data-at="3">2026 年的登記已截止。<b>2027 年 1 月</b>請再上動滋網登記抽籤；運動部另有「揮汗有禮」活動，完成 9 週以上運動紀錄者可取得 2027 年抽籤資格（細節以運動部公告為準）。</div>
+</div>
+<p class="src">資料：工商時報 2026-01-22、經理人、風傳媒 2026 年 1 月報導；動滋網 500.gov.tw。</p>
+<div class="note">重點是時間感：現在（11 月）2026 的運動幣已經在使用期，沒中籤的人記得明年 1 月登記。可以順便問：大家平常運動花錢嗎？這 500 元最想用在哪？</div>
+</section>
+<section class="slide">
 <span class="tag">我們可以怎麼做</span>
 <h2>從「認識隔壁」開始的鄰里互助網<small>不用等政府，這五步今天就能開始</small></h2>
 <div class="fill"><div class="row">
@@ -679,6 +738,7 @@ body.mobile .slide.cover{padding-bottom:44px}
   function isMobile(){ return window.innerWidth<760 || (window.innerWidth<1000 && window.innerHeight>window.innerWidth); }
   function fit(){
     var w=window.innerWidth, h=window.innerHeight;
+    var act=document.querySelector('.slide.active'); if(act && !isMobile()) setTimeout(function(){fitSlide(act)},0);
     if(isMobile()){
       document.body.classList.add('mobile');
       var s=w/640; stageEl.style.transform='scale('+s+')';
@@ -695,8 +755,18 @@ body.mobile .slide.cover{padding-bottom:44px}
     sl.querySelectorAll('.st').forEach(function(e){e.classList.toggle('on',+e.dataset.at<=stage)});
     sl.querySelectorAll('.only').forEach(function(e){e.classList.toggle('on',+e.dataset.at===stage)});
     sl.querySelectorAll('.badge[data-at],.tap[data-at]').forEach(function(e){e.style.display=(+e.dataset.at===stage)?'':'none'});
-    if(document.body.classList.contains('mobile')) fit();
+    if(document.body.classList.contains('mobile')) fit(); else fitSlide(sl);
   }
+  function fitSlide(sl){
+    var f=sl.querySelector('.fill'); if(!f) return;
+    f.style.zoom='';
+    if(document.body.classList.contains('mobile')) return;
+    var jc=f.style.justifyContent; f.style.justifyContent='flex-start';
+    var avail=f.clientHeight, need=f.scrollHeight;
+    f.style.justifyContent=jc;
+    if(need>avail+2){ f.style.zoom=Math.max(.55, (avail/need)*0.985).toFixed(3); }
+  }
+  window.__fitSlide=fitSlide;
   function show(n,full){
     i=Math.max(0,Math.min(slides.length-1,n));
     slides.forEach(function(s,k){s.classList.toggle('active',k===i)});
@@ -751,6 +821,7 @@ body.mobile .slide.cover{padding-bottom:44px}
   },{passive:true});
   window.addEventListener('resize',fit); window.addEventListener('orientationchange',function(){setTimeout(fit,200)}); fit();
   var m=(location.hash||'').match(/p(\d+)/); show(m?+m[1]-1:0);
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(function(){var a=document.querySelector('.slide.active'); if(a) fitSlide(a);});
   window.addEventListener('hashchange',function(){ var mm=(location.hash||'').match(/p(\d+)/); if(mm && (+mm[1]-1)!==i) show(+mm[1]-1); });
 })();
 </script>
